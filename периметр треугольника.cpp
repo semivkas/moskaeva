@@ -7,13 +7,14 @@ int main() {
 
     cin >> x1 >> y1;
     cin >> x2 >> y2;
-    cin >> x3 >> y3;
+    cin >> x3 >> y3; /**ввод координат вершин**/
 
+    /**по теореме пифагора вычитает стороны**/
     double a = sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
     double b = sqrt((x3 - x2)*(x3 - x2) + (y3 - y2)*(y3 - y2));
-    double c = sqrt((x1 - x3)*(x1 - x3) + (y1 - y3)*(y1 - y3));
+    double c = sqrt((x1 - x3)*(x1 - x3) + (y1 - y3)*(y1 - y3)); 
 
-    double P = a + b + c;
+    double P = a + b + c; /**считает периметр**/
 
     cout << P;
 
